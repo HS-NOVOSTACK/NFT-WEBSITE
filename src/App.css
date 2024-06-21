@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  width: 100%;
+}
+
+/* Navbar CSS */
+
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.search-input {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.navbar-collapse
+{
+  flex-grow: 0;
+}
+
+/* ul Li css */
+
+.navbar-list ul {
+
+  font-size: 17px;
+}
+
+
+
+/* Button CSS */
+
+.notification {
+  position: absolute;
+  top: 20px;
+  right: 284px;
+  background: rgb(255, 78, 78, 1);
+  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 11px;
+}
+
+
+.boton-elegante {
+  padding: 10px 12px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background: linear-gradient(223deg, #3F5EFB 0%, #FC466B 100%);
+}
+
+.boton-elegante::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: scale(0);
+  transition: transform 0.5s ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.boton-elegante:hover::after {
+  transform: scale(4);
+}
+
+.boton-elegante:hover {
+  border-color: #666666;
+
+}
+
+.wallet-btn {
+  padding: 10px 35px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+}
+
+/* section Page css */
+
+.section-content {
+  max-width: 1320px;
+}
+
+.section-row {
+  padding-top: 100px;
+  padding-bottom: 100px !important;
+}
+
+.section-text {
+  font-size: 60px;
+}
+
+.explore-btn {
+  padding: 11px 30px;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+}
+
+.create-btn {
+  padding: 11px 30px;
+  background: rgba(17, 13, 46, 1)
+}
+
+.section-card {
+  padding: 10px;
+  /* opacity: 0.2; */
+  border-radius: 15px;
+  background-color: rgb(17, 13, 46, 1);
+}
+
+.like-btn {
+  right: 25px;
+  top: 22px;
+  padding: 1px 9px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: white;
+}
+
+.card-img-btn {
+
+  top: 240px;
+  left: 30px;
+  padding-inline-end: 15px;
+}
+
+.card-img-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+.section-card-title {
+  font-size: 25px;
+}
+
+.card-section-btn {
+  background: rgba(63, 94, 251, 1);
+  padding: 8px 18px;
+}
+
+
+
+
+/* Top seller Section Css*/
+.top-seller-section {
+  background-image: url("https://raw.githubusercontent.com/uiaextend/twenfhess/main/home2/hero_bg3.jpeg");
+  /* background-size: cover;
+  background-position: center;  */
+  background-repeat: no-repeat;
+}
+
+.line {
+  width: 10px;
+  border: 1px solid rgba(63, 94, 251, 0.5);
+  padding-top: 120px;
+  margin-left: 22%;
+}
+
+.lines {
+  width: 10px;
+  border: 1px solid rgba(63, 94, 251, 0.5);
+  padding-top: 120px;
+  margin-right: 22%;
+}
+
+.top-seller-title {
+  font-size: 60px;
+  top: 94px;
+  left: 27%
+}
+
+.top-seller-bottom-title {
+  font-size: 60px;
+  bottom: 100px;
+  left: 28%
+}
+
+
+.pill-button {
+  height: 10px;
+  width: 64px;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+  position: absolute;
+  top: 99%;
+  left: 20%;
+}
+
+.pill-button2 {
+  height: 10px;
+  width: 64px;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+  position: absolute;
+  top: 124%;
+  left: 20%;
+}
+
+
+.pill-button3 {
+  height: 10px;
+  width: 64px;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+  position: absolute;
+  top: 99%;
+  right: 20%;
+}
+
+
+.pill-button4 {
+  height: 10px;
+  width: 64px;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+  position: absolute;
+  top: 124%;
+  right: 20%;
+}
+
+.top-seller-bottom-pill-button {
+  height: 10px;
+  width: 64px;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+  position: absolute;
+  bottom: 99%;
+  left: 20%;
+}
+
+.top-seller-bottom-pill-button2 {
+  height: 10px;
+  width: 64px;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+  position: absolute;
+  bottom: 124%;
+  left: 20%;
+}
+
+.top-seller-bottom-pill-button3 {
+  height: 10px;
+  width: 64px;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+  position: absolute;
+  bottom: 99%;
+  right: 20%;
+}
+
+.top-seller-bottom-pill-button4 {
+  height: 10px;
+  width: 64px;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+  position: absolute;
+  bottom: 124%;
+  right: 20%;
+}
+
+
+.seller-bottom-line {
+  width: 10px;
+  border: 1px solid rgba(63, 94, 251, 0.5);
+  padding-bottom: 120px;
+  margin-left: 22%;
+}
+
+
+.top-seller-card {
+  background: linear-gradient(225deg, #3f64fb75 0%, #fc46d170 100%);
+  border-radius: 5px;
+}
+
+.card-head {
+  font-weight: 900;
+}
+
+.fa-chart-line {
+  color: rgba(252, 70, 107, 1);
+  font-size: 13px;
+}
+
+.number {
+  font-size: 12px;
+}
+
+.number-text {
+  font-size: 10px;
+
+}
+
+.number-texts {
+  font-size: 10px;
+  right: 39px;
+}
+
+.top-seller-title-bottom {
+  font-size: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+/* New Items Section CSS */
+
+.new-items-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+
+.item-heading {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.btn-list {
+  background: rgba(17, 13, 46, 1);
+  height: 45px;
+  width: 460px;
+}
+
+.nft-btn {
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%)
+}
+
+.item-btn:hover {
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+
+}
+
+.view-btn {
+  padding: 10px 60px;
+}
+
+.card-item-img-btn {
+  top: 168px;
+  left: 30px;
+  padding-inline-end: 15px;
+}
+
+.like-item-btn {
+  right: 16px;
+  top: 16px;
+  padding: 2px 6px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: white;
+}
+
+.card-item-img-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.section-card-item-title {
+  font-size: 19px;
+}
+
+.card-item-text {
+  font-size: 12px;
+}
+
+.rotate-icon {
+  font-size: 11px;
+}
+
+.card-item-btn {
+  font-size: 11px;
+  padding: 6px 15px;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+}
+
+
+/* Category Section CSS */
+
+.category-title {
+  font-size: 60px;
+  color: #3f5efb;
+  font-weight: 800;
+}
+
+.category-pill-button {
+  height: 10px;
+  width: 30px;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+}
+
+.category-circle-button {
+  height: 10px;
+  width: 10px;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+
+}
+
+.category-card {
+  border-radius: 15px;
+  background-color: rgb(17, 13, 46, 1);
+}
+
+.art {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.veniam {
+  opacity: 0.9;
+}
+
+
+
+/* Logo Reveal CSS */
+
+.content-logo {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+
+.explore-more-btn {
+  padding: 8px 30px;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #007bff;
+  color: white;
+  border: 0;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.word {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+
+}
+
+.logo-reveal-card {
+  background: rgb(17, 13, 46, 1);
+  border-radius: 5px;
+}
+
+.logo-hr {
+  margin: 0;
+}
+
+.logo-reveal-border {
+  height: 50px;
+  width: 30%;
+  left: 130px;
+  bottom: 100px;
+  z-index: -1;
+}
+
+.logo-reveal2-border {
+  height: 36px;
+  width: 19%;
+  left: 272px;
+  bottom: 65px;
+  z-index: -1;
+}
+
+.logo-reveal3-border {
+  height: 35px;
+  width: 9%;
+  left: 406px;
+  bottom: 33px;
+}
+
+.element-3d-border {
+  height: 50px;
+  width: 30%;
+  right: 130px;
+  bottom: 100px;
+  z-index: -1;
+}
+
+.element-3d-1-border{
+  height: 36px;
+  width: 19%;
+  right: 272px;
+  bottom: 65px;
+  z-index: -1;
+}
+
+.element-3d-2-border {
+  height: 35px;
+  width: 9%;
+  right: 406px;
+  bottom: 33px;
+}
+
+/* Footer CSS */
+
+.footer-section
+{
+  background-image: url("https://raw.githubusercontent.com/uiaextend/jenfhess/main/41_Home%202_Light/hero/b/Rectangle1650.png");
+  background-repeat: no-repeat;
+  
+}
+
+.footer-card
+{
+  padding: 10px 30px;
+    background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.search{
+  padding: 24px 28px;
+}
+
+
+.footer-btn
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background: linear-gradient(225deg, #3F5EFB 0%, #FC466B 100%);
+  color: white;
+  font-size: 15px;
+}
+
+
+
+@media only screen and (max-width: 420px) {
+  
+  body{
+    width: 100% !important;
+  }
+  
+  .navbar, .search-input, .section-card, .footer-card {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .navbar-list ul {
+    font-size: 13px;
+  }
+
+
+  /* css of the section Page */
+
+  .section-row
+  {
+    padding-top: 50px !important;
+    padding-bottom: 150px !important;
+  }
+
+  .section-title{
+    margin-top: 0px !important;
+  }
+
+  .section-icon{
+    display: none !important;
+    
+  }
+
+  .section-text{
+    font-size: 27px !important;
+  }
+
+  .section-btn{
+    display: block !important;
+    margin-top: 2rem;
+  }
+
+  .explore-btn,
+  .create-btn
+  {
+    width: 100% !important;
+    margin-top: 1rem !important;
+  }
+
+  .section-pehra
+  {
+    margin-top: 1rem !important;
+  }
+
+  .section-main-card
+  {
+    display: none !important;
+  }
+
+  /* top seller section CSS */
+
+  .top-seller-section{
+    background-image: none;
+  }
+
+  .top-seller-card
+  {
+    width: 100% !important;
+  }
+
+
+.top-seller-title,
+.top-seller-bottom-title,
+.top-seller-row-2,
+.line,
+.lines,
+.pill-button,
+.pill-button2,
+.pill-button3,
+.pill-button4,
+.top-seller-bottom-pill-button,
+.top-seller-bottom-pill-button2,
+.top-seller-bottom-pill-button3,
+.top-seller-bottom-pill-button4
+{
+  display: none !important;
+}
+
+.top-seller-card-spacing
+{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.card-spacing
+{
+  justify-content: space-around !important;
+}
+
+/* New Items CSS */
+
+.new-items-main-div
+{
+  display: block !important;
+}
+
+.section-card{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.new-items-btn-group,
+.view-btn,
+.new-items-row-2
+{
+  display: none !important;
+}
+
+.new-items-row-1
+{
+  display: block;
+  
+}
+
+.item-heading
+{
+  text-align: center;
+  font-size: 40px;
+}
+
+.card-item-img-btn {
+  top: 226px;
+}
+
+.new-items-row-1 .col
+{
+  width: 100% !important;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;;
+}
+
+/* Category section CSS */
+
+.category-section-header
+{
+  display: block !important;
+}
+
+.category-hr,
+.category-header-circle
+{
+  display: none !important;
+}
+
+.category-title {
+  font-size: 33px;
+}
+
+.category-row
+{
+  display: block !important;
+}
+
+.category-card
+{
+  width: 19rem !important;
+}
+
+.category-row .col
+{
+  width: 100% !important;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* logo Reveal css */
+
+
+.content-logo
+{
+  display: none !important;
+}
+
+/* Footer CSS */
+
+.footer-section{
+  background-image: none;
+}
+
+
+.footer-row
+{
+  display: none !important;
+}
+
+.footer-row-lines
+{
+  display: none !important;
+}
+
+.footer-card-spacing
+{
+  padding: 0px !important;
+}
+
+
+}
